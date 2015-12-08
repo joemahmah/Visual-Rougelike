@@ -1,0 +1,99 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+Exception: Could not find font 'Monoid-Regular.ttf'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in script
+    $ ui.interact()
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/ast.py", line 797, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/python.py", line 1448, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "renpy/common/_layout/screen_main_menu.rpym", line 29, in <module>
+    $ ui.interact()
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/ui.py", line 277, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/core.py", line 2346, in interact
+    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/core.py", line 2683, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/core.py", line 1785, in draw_screen
+    renpy.config.screen_height,
+  File "renpy/display/render.pyx", line 394, in renpy.display.render.render_screen (gen/renpy.display.render.c:6190)
+    rv = render(root, width, height, 0, 0)
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/layout.py", line 650, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/layout.py", line 650, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/layout.py", line 650, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/screen.py", line 610, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/layout.py", line 650, in render
+    surf = render(child, width, height, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/layout.py", line 995, in render
+    st, at)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/layout.py", line 809, in render
+    surf = render(d, width - x, rh, cst, cat)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/behavior.py", line 624, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/layout.py", line 968, in render
+    xminimum = max(xminimum, size_groups[size_group].width(width, height, st, at))
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/layout.py", line 914, in width
+    rend = i.render(width, height, st, at)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/behavior.py", line 624, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/display/layout.py", line 995, in render
+    st, at)
+  File "renpy/display/render.pyx", line 103, in renpy.display.render.render (gen/renpy.display.render.c:3104)
+    cpdef render(d, object widtho, object heighto, double st, double at):
+  File "renpy/display/render.pyx", line 185, in renpy.display.render.render (gen/renpy.display.render.c:2721)
+    rv = d.render(widtho, heighto, st, at)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/text/text.py", line 1668, in render
+    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/text/text.py", line 567, in __init__
+    glyphs = ts.glyphs(s, self)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/text/text.py", line 239, in glyphs
+    fo = font.get_font(self.font, self.size, self.bold, self.italic, 0, self.antialias, self.vertical, self.hinting, layout.oversample)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/text/font.py", line 646, in get_font
+    face = load_face(fn)
+  File "/mnt/home/fatman/.renpy/renpy-6.99.6-sdk/renpy/text/font.py", line 589, in load_face
+    raise Exception("Could not find font {0!r}.".format(orig_fn))
+Exception: Could not find font 'Monoid-Regular.ttf'.
+
+Linux-4.2.0-1-amd64-x86_64-with-debian-stretch-sid
+Ren'Py 6.99.6.739
+Visual Rougelike 0.0
